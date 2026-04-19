@@ -30,6 +30,9 @@ jobs:
         run: |
           git config --global user.name "GitHub Action Bot"
           git config --global user.email "actions@github.com"
-          git add movies/*.json series/*.json tv_show/*.json asian_series/*.json
-          git commit -m "Update: $(date '+%Y-%m-%d %H:%M')" || echo "No changes"
+          
+          # إضافة كافة مجلدات الـ JSON الخمسة
+          git add movies/*.json series/*.json tv_show/*.json asian_series/*.json anime/*.json
+          
+          git commit -m "Full Media Update: $(date '+%Y-%m-%d %H:%M')" || echo "No changes"
           git push
