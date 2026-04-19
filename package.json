@@ -1,7 +1,7 @@
 {
-  "name": "fasel-hd-scraper",
+  "name": "kiro-scraper",
   "version": "1.0.0",
-  "description": "Scraper for Fasel HD movies",
+  "description": "FaselHD Scraper for Movies and Series",
   "main": "scraper.js",
   "type": "module",
   "scripts": {
@@ -9,5 +9,7 @@
   },
   "dependencies": {
     "jsdom": "^24.0.0"
-  }
+  },
+  "author": "Fadi",
+  "license": "MIT"
 }
