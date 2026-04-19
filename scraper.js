@@ -6,12 +6,12 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// تعريف المجلدات الأربعة
+// تعريف المجلدات
 const DIRS = {
     movies: path.join(__dirname, "movies"),
     series: path.join(__dirname, "series"),
     tv_show: path.join(__dirname, "tv_show"),
-    asian_series: path.join(__dirname, "asian_series") // المجلد الجديد
+    asian_series: path.join(__dirname, "asian_series")
 };
 
 // إنشاء المجلدات
@@ -37,6 +37,8 @@ function parseElement(el) {
     const quality = el.querySelector('.quality')?.textContent?.trim() || "";
     const category = el.querySelector('.cat')?.textContent?.trim() || "";
     const views = el.querySelector('.pViews')?.textContent?.replace(/[^0-9]/g, '') || "";
+    
+    // محاولة استخراج التقييم من أكثر من مكان
     const imdb = el.querySelector('.pImdb')?.textContent?.trim() || 
                  el.querySelector('span i.fa-star')?.parentElement?.textContent?.trim() || "";
     
@@ -51,7 +53,6 @@ function parseElement(el) {
     };
 }
 
-// دالة تنفيذ الاستخراج الشامل
 async function startScraping() {
     try {
         console.log("🚀 جاري بدء تحديث البيانات الشامل...");
@@ -83,10 +84,15 @@ async function startScraping() {
         fs.writeFileSync(path.join(DIRS.tv_show, "yine.json"), JSON.stringify(yTV, null, 2));
         console.log(`✅ TV Shows: Hafta(${hTV.length}), Yine(${yTV.length})`);
 
-        // 4. المسلسلات الآسيوية (Asian Series) - القسم الجديد
+        // 4. المسلسلات الآسيوية (Asian Series) - تم تعديل الـ Selector هنا
         const resAsianH = await fetch("https://www.fasel-hd.cam/asian-series", { headers: HEADERS });
-        const hAsian = Array.from(new JSDOM(await resAsianH.text()).window.document.querySelectorAll('.itemviews .postDiv, .owl-item .postDiv')).map(parseElement).filter(Boolean);
-        const resAsianY = await fetch("https://www.fasel-hd.cam/asian-episodes", { headers: HEADERS }); // الرابط المستنتج للحلقات الآسيوية
+        const docAsianH = new JSDOM(await resAsianH.text()).window.document;
+        // استهداف مباشر لأي postDiv داخل owl-item لضمان التقاط السلايدر الآسيوي
+        const hAsian = Array.from(docAsianH.querySelectorAll('.owl-item .postDiv, .itemviews .postDiv'))
+                            .filter(el => !el.closest('.all-items-listing'))
+                            .map(parseElement).filter(Boolean);
+        
+        const resAsianY = await fetch("https://www.fasel-hd.cam/asian-episodes", { headers: HEADERS });
         const yAsian = Array.from(new JSDOM(await resAsianY.text()).window.document.querySelectorAll('.col-xl-2 .postDiv')).map(parseElement).filter(Boolean);
         fs.writeFileSync(path.join(DIRS.asian_series, "hafta.json"), JSON.stringify(hAsian, null, 2));
         fs.writeFileSync(path.join(DIRS.asian_series, "yine.json"), JSON.stringify(yAsian, null, 2));
