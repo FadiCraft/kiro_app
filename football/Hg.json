@@ -1,48 +1,44 @@
-{
-  "scrapedAt": "٢٠‏/٤‏/٢٠٢٦، ١:٢٣:٥١ ص",
-  "totalMatches": 3,
-  "matches": [
-    {
-      "url": "https://www.kooora-lives1.info/",
-      "status": "لم تبدأ بعد",
-      "league": "آسيا, دوري أبطال آسيا للنخبة - نصف النهائي",
-      "time": "07:15 PM",
-      "channel": "غير معروف",
-      "score": "0 - 0",
-      "nameteam1": "فيسيل كوبي",
-      "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/07/2151.png",
-      "nameteam2": "الأهلي",
-      "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/1.png",
-      "id": 646841,
-      "watchServers": "غير متوفر"
-    },
-    {
-      "url": "https://www.kooora-lives1.info/",
-      "status": "لم تبدأ بعد",
-      "league": "إيطاليا, الدوري الإيطالي",
-      "time": "09:45 PM",
-      "channel": "Starzplay",
-      "score": "0 - 0",
-      "nameteam1": "ليتشي",
-      "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/204.png",
-      "nameteam2": "فيورنتينا",
-      "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/323.png",
-      "id": 198277,
-      "watchServers": "غير متوفر"
-    },
-    {
-      "url": "https://www.kooora-lives1.info/",
-      "status": "لم تبدأ بعد",
-      "league": "إنجلترا, الدوري الإنجليزي",
-      "time": "10:00 PM",
-      "channel": "Bein Sports HD2",
-      "score": "0 - 0",
-      "nameteam1": "كريستال بالاس",
-      "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/299.png",
-      "nameteam2": "وست هام يونايتد",
-      "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/103.png",
-      "id": 980362,
-      "watchServers": "غير متوفر"
-    }
-  ]
-}
+[
+  {
+    "url": "https://www.kooora-lives1.info/",
+    "status": "لم تبدأ بعد",
+    "league": "آسيا, دوري أبطال آسيا للنخبة - نصف النهائي",
+    "time": "07:15 PM",
+    "channel": "غير معروف",
+    "score": "0 - 0",
+    "nameteam1": "فيسيل كوبي",
+    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/07/2151.png",
+    "nameteam2": "الأهلي",
+    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/1.png",
+    "id": 288412,
+    "watchServers": "غير متوفر"
+  },
+  {
+    "url": "https://www.kooora-lives1.info/",
+    "status": "لم تبدأ بعد",
+    "league": "إيطاليا, الدوري الإيطالي",
+    "time": "09:45 PM",
+    "channel": "Starzplay",
+    "score": "0 - 0",
+    "nameteam1": "ليتشي",
+    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/204.png",
+    "nameteam2": "فيورنتينا",
+    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/323.png",
+    "id": 756092,
+    "watchServers": "غير متوفر"
+  },
+  {
+    "url": "https://www.kooora-lives1.info/",
+    "status": "لم تبدأ بعد",
+    "league": "إنجلترا, الدوري الإنجليزي",
+    "time": "10:00 PM",
+    "channel": "Bein Sports HD2",
+    "score": "0 - 0",
+    "nameteam1": "كريستال بالاس",
+    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/299.png",
+    "nameteam2": "وست هام يونايتد",
+    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/103.png",
+    "id": 314551,
+    "watchServers": "غير متوفر"
+  }
+]
