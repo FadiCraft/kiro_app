@@ -1,0 +1,47 @@
+name: استخراج مباريات
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/10 * * * *"
+
+jobs:
+  extract-football-matches:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Puppeteer Manually
+        run: |
+          # هنا نقوم بتثبيت المكتبة للأكشن فقط دون تعديل package.json
+          npm install puppeteer 
+          # تثبيت متصفح كروم اللازم للتشغيل
+          npx puppeteer browsers install chrome
+          echo "✅ تم تثبيت Puppeteer بنجاح"
+
+      - name: Create football directory
+        run: mkdir -p football
+
+      - name: Run football.js
+        run: |
+          echo "⚽ بدء استخراج المباريات..."
+          node Match.js
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add football/Hg.json
+          if git diff --cached --quiet; then
+            echo "📭 لا توجد تغييرات"
+          else
+            git commit -m "⚽ تحديث المباريات التلقائي"
+            git push
+          fi
