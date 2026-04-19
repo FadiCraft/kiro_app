@@ -6,91 +6,72 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// إعداد المسارات
 const MOVIES_DIR = path.join(__dirname, "movies");
-const HAFTA_FILE = path.join(MOVIES_DIR, "hafta.json");
-const YINE_FILE = path.join(MOVIES_DIR, "yine.json");
-const TARGET_URL = "https://www.fasel-hd.cam/all-movies";
+const SERIES_DIR = path.join(__dirname, "series");
 
-if (!fs.existsSync(MOVIES_DIR)) {
-    fs.mkdirSync(MOVIES_DIR, { recursive: true });
+// التأكد من وجود المجلدات
+[MOVIES_DIR, SERIES_DIR].forEach(dir => {
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+});
+
+const HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+};
+
+// دالة عامة لجلب الـ HTML وتحويله لـ DOM
+async function getDoc(url) {
+    const res = await fetch(url, { headers: HEADERS });
+    const html = await res.text();
+    return new JSDOM(html).window.document;
 }
 
-async function scrapeFasel() {
+// دالة استخراج بيانات العنصر (فيلم، مسلسل، حلقة)
+function parseItem(el) {
+    const link = el.querySelector('a')?.href;
+    const title = el.querySelector('.h1')?.textContent?.trim();
+    const image = el.querySelector('img')?.getAttribute('data-src') || el.querySelector('img')?.src;
+    const quality = el.querySelector('.quality')?.textContent?.trim() || "";
+    const category = el.querySelector('.cat')?.textContent?.trim() || "";
+    const views = el.querySelector('.pViews')?.textContent?.replace(/[^0-9]/g, '') || "";
+    const epNumber = el.querySelector('.epNumb strong')?.textContent?.trim() || ""; // خاص بالحلقات
+
+    if (link && title) {
+        return { title, link, image, quality, category, views, ...(epNumber && { episode: epNumber }) };
+    }
+    return null;
+}
+
+async function startScraping() {
     try {
-        const response = await fetch(TARGET_URL, {
-            headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36' }
-        });
-
-        const html = await response.text();
-        const dom = new JSDOM(html);
-        const doc = dom.window.document;
-
-        // دالة موحدة لاستخراج البيانات لضمان الجودة
-        const parseMovie = (el) => {
-            const link = el.querySelector('a')?.href;
-            const title = el.querySelector('.h1')?.textContent?.trim();
-            const image = el.querySelector('img')?.getAttribute('data-src') || el.querySelector('img')?.src;
-            const quality = el.querySelector('.quality')?.textContent?.trim() || "";
-            const category = el.querySelector('.cat')?.textContent?.trim() || "";
-            const views = el.querySelector('.pViews')?.textContent?.replace(/[^0-9]/g, '') || "";
-            const imdb = el.querySelector('.pImdb')?.textContent?.trim() || "";
-
-            if (link && title) {
-                return { title, link, image, quality, category, views, imdb };
-            }
-            return null;
-        };
-
-        // --- 1. استخراج "أشهر الأفلام" (hafta.json) ---
-        const haftaMovies = [];
-        // جربنا الاستهداف عن طريق id السلايدر مباشرة
-        const haftaSection = doc.querySelector('#owl-top-today');
-        if (haftaSection) {
-            const items = haftaSection.querySelectorAll('.postDiv');
-            items.forEach(el => {
-                const data = parseMovie(el);
-                if (data) haftaMovies.push(data);
-            });
-        }
+        // --- 1. الأفلام (Movies) ---
+        console.log("🎬 جاري معالجة الأفلام...");
+        const movieDoc = await getDoc("https://www.fasel-hd.cam/all-movies");
         
-        // إذا فشل الاستهداف بالـ id، نجرب البحث عن أي عنصر داخل owl-carousel في أعلى الصفحة
-        if (haftaMovies.length === 0) {
-            const firstCarousel = doc.querySelector('.owl-carousel');
-            if (firstCarousel) {
-                firstCarousel.querySelectorAll('.postDiv').forEach(el => {
-                    const data = parseMovie(el);
-                    if (data) haftaMovies.push(data);
-                });
-            }
-        }
+        const haftaMovies = Array.from(movieDoc.querySelectorAll('#owl-top-today .postDiv')).map(parseItem).filter(Boolean);
+        const yineMovies = Array.from(movieDoc.querySelectorAll('.col-xl-2 .postDiv, .col-lg-2 .postDiv'))
+                                .filter(el => !el.closest('#owl-top-today'))
+                                .map(parseItem).filter(Boolean);
 
-        // --- 2. استخراج "أحدث الأفلام" (yine.json) ---
-        const yineMovies = [];
-        // نستخدم نفس الـ selector الذي نجح معك سابقاً
-        const yineElements = doc.querySelectorAll('.col-xl-2, .col-lg-2, .col-md-3');
-        
-        yineElements.forEach(el => {
-            // نتأكد أننا لا نستخرج من السلايدر العلوي هنا
-            if (!el.closest('#owl-top-today')) {
-                const postDiv = el.querySelector('.postDiv');
-                if (postDiv) {
-                    const data = parseMovie(postDiv);
-                    if (data) yineMovies.push(data);
-                }
-            }
-        });
+        fs.writeFileSync(path.join(MOVIES_DIR, "hafta.json"), JSON.stringify(haftaMovies, null, 2));
+        fs.writeFileSync(path.join(MOVIES_DIR, "yine.json"), JSON.stringify(yineMovies, null, 2));
 
-        // حفظ وتجديد الملفات
-        fs.writeFileSync(HAFTA_FILE, JSON.stringify(haftaMovies, null, 2));
-        fs.writeFileSync(YINE_FILE, JSON.stringify(yineMovies, null, 2));
+        // --- 2. أشهر المسلسلات (Series - hafta) ---
+        console.log("📺 جاري معالجة أشهر المسلسلات...");
+        const seriesDoc = await getDoc("https://www.fasel-hd.cam/series");
+        const popularSeries = Array.from(seriesDoc.querySelectorAll('.owl-item .postDiv')).map(parseItem).filter(Boolean);
+        fs.writeFileSync(path.join(SERIES_DIR, "hafta.json"), JSON.stringify(popularSeries, null, 2));
 
-        console.log(`✅ hafta.json: استخراج ${haftaMovies.length} فيلم`);
-        console.log(`✅ yine.json: استخراج ${yineMovies.length} فيلم`);
+        // --- 3. أحدث الحلقات (Episodes - yine) ---
+        console.log("🔔 جاري معالجة أحدث الحلقات...");
+        const episodesDoc = await getDoc("https://www.fasel-hd.cam/episodes");
+        const latestEpisodes = Array.from(episodesDoc.querySelectorAll('.col-xl-2 .postDiv, .col-lg-2 .postDiv')).map(parseItem).filter(Boolean);
+        fs.writeFileSync(path.join(SERIES_DIR, "yine.json"), JSON.stringify(latestEpisodes, null, 2));
 
-    } catch (error) {
-        console.error("❌ خطأ:", error.message);
-        process.exit(1);
+        console.log("✅ اكتملت العملية بنجاح!");
+    } catch (err) {
+        console.error("❌ حدث خطأ:", err.message);
     }
 }
 
-scrapeFasel();
+startScraping();
