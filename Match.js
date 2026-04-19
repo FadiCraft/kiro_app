@@ -17,7 +17,7 @@ async function main() {
     });
 
     const page = await browser.newPage();
-    const allMatches = [];
+    const finalResultArray = []; // المصفوفة التي ستخزن النتائج النهائية مباشرة
 
     try {
         console.log("🌐 جاري فتح الصفحة الرئيسية...");
@@ -49,18 +49,17 @@ async function main() {
                     scoreText = `${scoreSpans[0].textContent.trim()} - ${scoreSpans[2].textContent.trim()}`;
                 }
 
-                // التعديل هنا: وضع البيانات في المستوى الأول مباشرة
                 results.push({
-                    url: card.href,
-                    status: status,
-                    league: league,
-                    time: time,
-                    channel: infoBarSpans[0]?.textContent.trim().replace('📺 ', '') || "غير متوفر",
-                    score: scoreText,
-                    nameteam1: teamNames[0]?.textContent.trim() || "غير معروف",
-                    logoteam1: teamLogos[0]?.getAttribute('src') || "",
-                    nameteam2: teamNames[1]?.textContent.trim() || "غير معروف",
-                    logoteam2: teamLogos[1]?.getAttribute('src') || ""
+                    "url": card.href,
+                    "status": status,
+                    "league": league,
+                    "time": time,
+                    "channel": infoBarSpans[0]?.textContent.trim().replace('📺 ', '') || "غير متوفر",
+                    "score": scoreText,
+                    "nameteam1": teamNames[0]?.textContent.trim() || "غير معروف",
+                    "logoteam1": teamLogos[0]?.getAttribute('src') || "",
+                    "nameteam2": teamNames[1]?.textContent.trim() || "غير معروف",
+                    "logoteam2": teamLogos[1]?.getAttribute('src') || ""
                 });
             });
             return results;
@@ -70,10 +69,12 @@ async function main() {
 
         for (let i = 0; i < matchesData.length; i++) {
             const match = matchesData[i];
+            
+            // إضافة ID عشوائي
             match.id = Math.floor(100000 + Math.random() * 900000);
 
             if (match.status !== "انتهت") {
-                console.log(`🔍 جاري فحص: ${match.nameteam1} vs ${match.nameteam2}`);
+                console.log(`🔍 جاري فحص سيرفرات: ${match.nameteam1} vs ${match.nameteam2}`);
                 const matchPage = await browser.newPage();
                 try {
                     await matchPage.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36');
@@ -87,30 +88,23 @@ async function main() {
                         return found ? found.src : "";
                     });
 
-                    // إضافة رابط السيرفر بجانب البيانات الأخرى مباشرة
                     match.watchServers = serverLink || "غير متوفر";
-                    if (serverLink) console.log(`   ✨ تم العثور على السيرفر!`);
 
                 } catch (e) {
-                    match.watchServers = "خطأ في التحميل";
+                    match.watchServers = "غير متوفر";
                 }
                 await matchPage.close();
             } else {
                 match.watchServers = "المباراة انتهت";
             }
 
-            allMatches.push(match);
+            finalResultArray.push(match);
             await new Promise(r => setTimeout(r, 1000));
         }
 
-        const output = {
-            scrapedAt: new Date().toLocaleString('ar-EG', { timeZone: 'Africa/Cairo' }),
-            totalMatches: allMatches.length,
-            matches: allMatches
-        };
-
-        fs.writeFileSync(OUTPUT_FILE, JSON.stringify(output, null, 2));
-        console.log(`\n🚀 تم الحفظ بنجاح في ${OUTPUT_FILE}`);
+        // التعديل الجوهري هنا: حفظ المصفوفة مباشرة بدون غلاف
+        fs.writeFileSync(OUTPUT_FILE, JSON.stringify(finalResultArray, null, 2));
+        console.log(`\n🚀 تم الحفظ بنجاح بصيغة المصفوفة في ${OUTPUT_FILE}`);
 
     } catch (error) {
         console.error("❌ حدث خطأ كبير:", error.message);
