@@ -19,81 +19,82 @@ const HEADERS = {
 
 async function startScraping() {
     try {
-        // --- 1. أشهر الأفلام (Movies -> hafta.json) ---
-        console.log("🎬 جاري استخراج أشهر الأفلام...");
+        // 1. استخراج الأفلام (hafta و yine)
+        console.log("🎬 جاري استخراج الأفلام...");
         const resMovies = await fetch("https://www.fasel-hd.cam/all-movies", { headers: HEADERS });
         const docMovies = new JSDOM(await resMovies.text()).window.document;
         
+        // --- hafta.json (أشهر الأفلام من السلايدر)
         const haftaMovies = [];
-        // نبحث داخل الحاوية المخصصة لسلايدر اليوم/الأسبوع
-        const movieSlider = docMovies.querySelector('#owl-top-today') || docMovies.querySelector('.owl-carousel');
-        if (movieSlider) {
-            movieSlider.querySelectorAll('.postDiv').forEach(el => {
-                const item = parseElement(el);
-                if (item) haftaMovies.push(item);
-            });
-        }
+        docMovies.querySelectorAll('.owl-item .postDiv').forEach(el => {
+            const data = parseElement(el);
+            if (data) haftaMovies.push(data);
+        });
         fs.writeFileSync(path.join(MOVIES_DIR, "hafta.json"), JSON.stringify(haftaMovies, null, 2));
 
-        // --- 2. أحدث الأفلام (Movies -> yine.json) ---
+        // --- yine.json (أحدث الأفلام من الشبكة col-xl-2)
         const yineMovies = [];
-        docMovies.querySelectorAll('.all-items-listing .postDiv').forEach(el => {
-            const item = parseElement(el);
-            if (item) yineMovies.push(item);
+        docMovies.querySelectorAll('.col-xl-2 .postDiv, .col-lg-2 .postDiv').forEach(el => {
+            // نتأكد أنه ليس بداخل السلايدر لعدم التكرار
+            if (!el.closest('.owl-carousel')) {
+                const data = parseElement(el);
+                if (data) yineMovies.push(data);
+            }
         });
         fs.writeFileSync(path.join(MOVIES_DIR, "yine.json"), JSON.stringify(yineMovies, null, 2));
 
-        // --- 3. أشهر المسلسلات (Series -> hafta.json) ---
+        // 2. استخراج أشهر المسلسلات (series/hafta.json)
         console.log("📺 جاري استخراج أشهر المسلسلات...");
         const resSeries = await fetch("https://www.fasel-hd.cam/series", { headers: HEADERS });
         const docSeries = new JSDOM(await resSeries.text()).window.document;
         
         const haftaSeries = [];
-        // في صفحة المسلسلات، نبحث عن السلايدر العلوي
-        const seriesSlider = docSeries.querySelector('.owl-carousel');
-        if (seriesSlider) {
-            seriesSlider.querySelectorAll('.postDiv').forEach(el => {
-                const item = parseElement(el);
-                if (item) haftaSeries.push(item);
-            });
-        }
+        docSeries.querySelectorAll('.owl-item .postDiv').forEach(el => {
+            const data = parseElement(el);
+            if (data) haftaSeries.push(data);
+        });
         fs.writeFileSync(path.join(SERIES_DIR, "hafta.json"), JSON.stringify(haftaSeries, null, 2));
 
-        // --- 4. أحدث الحلقات (Series -> yine.json) ---
+        // 3. استخراج أحدث الحلقات (series/yine.json)
         console.log("🔔 جاري استخراج أحدث الحلقات...");
         const resEps = await fetch("https://www.fasel-hd.cam/episodes", { headers: HEADERS });
         const docEps = new JSDOM(await resEps.text()).window.document;
         
         const yineSeries = [];
-        docEps.querySelectorAll('.all-items-listing .postDiv').forEach(el => {
-            const item = parseElement(el);
-            if (item) yineSeries.push(item);
+        docEps.querySelectorAll('.col-xl-2 .postDiv, .col-lg-2 .postDiv').forEach(el => {
+            const data = parseElement(el);
+            if (data) yineSeries.push(data);
         });
         fs.writeFileSync(path.join(SERIES_DIR, "yine.json"), JSON.stringify(yineSeries, null, 2));
 
-        console.log(`✅ انتهى الاستخراج بنجاح!`);
-        console.log(`- أفلام (أشهر/أحدث): ${haftaMovies.length}/${yineMovies.length}`);
-        console.log(`- مسلسلات (أشهر/حلقات): ${haftaSeries.length}/${yineSeries.length}`);
+        console.log("✅ تمت العملية بنجاح!");
 
     } catch (err) {
         console.error("❌ خطأ:", err.message);
     }
 }
 
-// دالة التحليل الموحدة
 function parseElement(el) {
     const a = el.querySelector('a');
     if (!a) return null;
 
+    // استخراج رابط الصورة الصحيح
+    const img = el.querySelector('img');
+    const image = img?.getAttribute('data-src') || img?.getAttribute('src') || "";
+
+    // استخراج رقم الحلقة إذا وجد (لـ yine.json الخاص بالمسلسلات)
+    const epNode = el.querySelector('.epNumb strong');
+    const episode = epNode ? epNode.textContent.trim() : null;
+
     return {
         title: el.querySelector('.h1')?.textContent?.trim() || "",
         link: a.href || "",
-        image: el.querySelector('img')?.getAttribute('data-src') || el.querySelector('img')?.src || "",
+        image: image,
         quality: el.querySelector('.quality')?.textContent?.trim() || "",
         category: el.querySelector('.cat')?.textContent?.trim() || "",
         views: el.querySelector('.pViews')?.textContent?.replace(/[^0-9]/g, '') || "",
         imdb: el.querySelector('.pImdb')?.textContent?.trim() || "",
-        episode: el.querySelector('.epNumb strong')?.textContent?.trim() || ""
+        ...(episode && { episode }) // يضاف فقط إذا كانت حلقة
     };
 }
 
