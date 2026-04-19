@@ -25,43 +25,58 @@ async function scrapeFasel() {
         const dom = new JSDOM(html);
         const doc = dom.window.document;
 
-        // --- 1. استخراج "أشهر الأفلام" (hafta.json) ---
-        // الهيكل: owl-item active -> itemviews -> postDiv
-        const haftaMovies = [];
-        const haftaElements = doc.querySelectorAll('.owl-item .postDiv');
-
-        haftaElements.forEach(el => {
+        // دالة موحدة لاستخراج البيانات لضمان الجودة
+        const parseMovie = (el) => {
             const link = el.querySelector('a')?.href;
             const title = el.querySelector('.h1')?.textContent?.trim();
             const image = el.querySelector('img')?.getAttribute('data-src') || el.querySelector('img')?.src;
             const quality = el.querySelector('.quality')?.textContent?.trim() || "";
             const category = el.querySelector('.cat')?.textContent?.trim() || "";
             const views = el.querySelector('.pViews')?.textContent?.replace(/[^0-9]/g, '') || "";
+            const imdb = el.querySelector('.pImdb')?.textContent?.trim() || "";
 
             if (link && title) {
-                haftaMovies.push({ title, link, image, quality, category, views });
+                return { title, link, image, quality, category, views, imdb };
             }
-        });
+            return null;
+        };
+
+        // --- 1. استخراج "أشهر الأفلام" (hafta.json) ---
+        const haftaMovies = [];
+        // جربنا الاستهداف عن طريق id السلايدر مباشرة
+        const haftaSection = doc.querySelector('#owl-top-today');
+        if (haftaSection) {
+            const items = haftaSection.querySelectorAll('.postDiv');
+            items.forEach(el => {
+                const data = parseMovie(el);
+                if (data) haftaMovies.push(data);
+            });
+        }
+        
+        // إذا فشل الاستهداف بالـ id، نجرب البحث عن أي عنصر داخل owl-carousel في أعلى الصفحة
+        if (haftaMovies.length === 0) {
+            const firstCarousel = doc.querySelector('.owl-carousel');
+            if (firstCarousel) {
+                firstCarousel.querySelectorAll('.postDiv').forEach(el => {
+                    const data = parseMovie(el);
+                    if (data) haftaMovies.push(data);
+                });
+            }
+        }
 
         // --- 2. استخراج "أحدث الأفلام" (yine.json) ---
-        // الهيكل: col-xl-2 -> postDiv
         const yineMovies = [];
-        const yineElements = doc.querySelectorAll('.col-xl-2.col-lg-2, .col-lg-2.col-md-3');
-
+        // نستخدم نفس الـ selector الذي نجح معك سابقاً
+        const yineElements = doc.querySelectorAll('.col-xl-2, .col-lg-2, .col-md-3');
+        
         yineElements.forEach(el => {
-            const postDiv = el.querySelector('.postDiv');
-            if (!postDiv) return;
-
-            const link = postDiv.querySelector('a')?.href;
-            const title = postDiv.querySelector('.h1')?.textContent?.trim();
-            const image = postDiv.querySelector('img')?.getAttribute('data-src') || postDiv.querySelector('img')?.src;
-            const quality = postDiv.querySelector('.quality')?.textContent?.trim() || "";
-            const category = postDiv.querySelector('.cat')?.textContent?.trim() || "";
-            const imdb = postDiv.querySelector('.pImdb')?.textContent?.trim() || "";
-            const views = postDiv.querySelector('.pViews')?.textContent?.replace(/[^0-9]/g, '') || "";
-
-            if (link && title) {
-                yineMovies.push({ title, link, image, quality, category, imdb, views });
+            // نتأكد أننا لا نستخرج من السلايدر العلوي هنا
+            if (!el.closest('#owl-top-today')) {
+                const postDiv = el.querySelector('.postDiv');
+                if (postDiv) {
+                    const data = parseMovie(postDiv);
+                    if (data) yineMovies.push(data);
+                }
             }
         });
 
@@ -69,8 +84,8 @@ async function scrapeFasel() {
         fs.writeFileSync(HAFTA_FILE, JSON.stringify(haftaMovies, null, 2));
         fs.writeFileSync(YINE_FILE, JSON.stringify(yineMovies, null, 2));
 
-        console.log(`✅ تم استخراج ${haftaMovies.length} فيلم لـ hafta.json`);
-        console.log(`✅ تم استخراج ${yineMovies.length} فيلم لـ yine.json`);
+        console.log(`✅ hafta.json: استخراج ${haftaMovies.length} فيلم`);
+        console.log(`✅ yine.json: استخراج ${yineMovies.length} فيلم`);
 
     } catch (error) {
         console.error("❌ خطأ:", error.message);
