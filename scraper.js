@@ -6,13 +6,11 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// إعدادات المسارات
 const MOVIES_DIR = path.join(__dirname, "movies");
 const HAFTA_FILE = path.join(MOVIES_DIR, "hafta.json");
 const YINE_FILE = path.join(MOVIES_DIR, "yine.json");
 const TARGET_URL = "https://www.fasel-hd.cam/all-movies";
 
-// التأكد من وجود المجلد
 if (!fs.existsSync(MOVIES_DIR)) {
     fs.mkdirSync(MOVIES_DIR, { recursive: true });
 }
@@ -30,11 +28,13 @@ async function scrapeFasel() {
         const dom = new JSDOM(html);
         const doc = dom.window.document;
 
-        // 1. استخراج "أشهر الأفلام" (hafta.json)
-        // الميزة: موجودة داخل owl-item
+        // --- 1. أشهر الأفلام (hafta.json) ---
+        // قمت بتغيير الـ Selector ليكون أكثر دقة ويستهدف العناصر داخل الـ carousel مباشرة
         const haftaMovies = [];
-        const haftaElements = doc.querySelectorAll('.owl-item .postDiv');
+        const haftaElements = doc.querySelectorAll('#owl-top-today .itemviews .postDiv');
         
+        console.log(`🔍 جاري فحص أشهر الأفلام، وجدت: ${haftaElements.length}`);
+
         haftaElements.forEach(el => {
             const link = el.querySelector('a')?.href;
             const title = el.querySelector('.h1')?.textContent.trim();
@@ -42,18 +42,19 @@ async function scrapeFasel() {
             const quality = el.querySelector('.quality')?.textContent.trim();
             const views = el.querySelector('.pViews')?.textContent.trim();
             
-            // استخراج التصنيفات (الأكشن، الجريمة...)
-            const categories = Array.from(el.querySelectorAll('.cat')).map(c => c.textContent.trim());
+            // تعديل: استخراج تصنيف واحد فقط (أول واحد)
+            const firstCategory = el.querySelector('.cat')?.textContent.trim() || "";
 
             if (link && title) {
-                haftaMovies.push({ title, link, image, quality, views, categories });
+                haftaMovies.push({ title, link, image, quality, views, category: firstCategory });
             }
         });
 
-        // 2. استخراج "أحدث الأفلام" (yine.json)
-        // الميزة: موجودة في نظام الشبكة (col-xl-2...)
+        // --- 2. أحدث الأفلام (yine.json) ---
         const yineMovies = [];
-        const yineElements = doc.querySelectorAll('.col-xl-2 .postDiv, .col-lg-2 .postDiv');
+        const yineElements = doc.querySelectorAll('.all-items-listing .postDiv');
+
+        console.log(`🔍 جاري فحص أحدث الأفلام، وجدت: ${yineElements.length}`);
 
         yineElements.forEach(el => {
             const link = el.querySelector('a')?.href;
@@ -62,22 +63,24 @@ async function scrapeFasel() {
             const quality = el.querySelector('.quality')?.textContent.trim();
             const imdb = el.querySelector('.pImdb')?.textContent.trim();
             const views = el.querySelector('.pViews')?.textContent.trim();
-            const categories = Array.from(el.querySelectorAll('.cat')).map(c => c.textContent.trim());
+            
+            // تعديل: استخراج تصنيف واحد فقط
+            const firstCategory = el.querySelector('.cat')?.textContent.trim() || "";
 
             if (link && title) {
-                yineMovies.push({ title, link, image, quality, imdb, views, categories });
+                yineMovies.push({ title, link, image, quality, imdb, views, category: firstCategory });
             }
         });
 
-        // حفظ الملفات (سيتم الكتابة فوق القديم تلقائياً)
-        fs.writeFileSync(HAFTA_FILE, JSON.stringify({ total: haftaMovies.length, lastUpdated: new Date().toISOString(), movies: haftaMovies }, null, 2));
-        fs.writeFileSync(YINE_FILE, JSON.stringify({ total: yineMovies.length, lastUpdated: new Date().toISOString(), movies: yineMovies }, null, 2));
+        // حفظ وتجديد الملفات
+        fs.writeFileSync(HAFTA_FILE, JSON.stringify(haftaMovies, null, 2));
+        fs.writeFileSync(YINE_FILE, JSON.stringify(yineMovies, null, 2));
 
         console.log(`✅ تم تحديث hafta.json بـ ${haftaMovies.length} فيلم`);
         console.log(`✅ تم تحديث yine.json بـ ${yineMovies.length} فيلم`);
 
     } catch (error) {
-        console.error("❌ حدث خطأ أثناء الاستخراج:", error.message);
+        console.error("❌ حدث خطأ:", error.message);
         process.exit(1);
     }
 }
