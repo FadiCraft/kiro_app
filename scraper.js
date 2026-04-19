@@ -6,13 +6,16 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// تعريف كافة المجلدات الخمسة
 const DIRS = {
     movies: path.join(__dirname, "movies"),
     series: path.join(__dirname, "series"),
     tv_show: path.join(__dirname, "tv_show"),
-    asian_series: path.join(__dirname, "asian_series")
+    asian_series: path.join(__dirname, "asian_series"),
+    anime: path.join(__dirname, "anime") // المجلد الجديد
 };
 
+// إنشاء المجلدات
 Object.values(DIRS).forEach(dir => {
     if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 });
@@ -45,56 +48,40 @@ function parseElement(el) {
 
 async function startScraping() {
     try {
-        console.log("🚀 جاري بدء تحديث البيانات الشامل...");
+        console.log("🚀 جاري بدء تحديث البيانات الشامل (5 أقسام)...");
 
-        // --- 1. الأفلام ---
-        const resM = await fetch("https://www.fasel-hd.cam/all-movies", { headers: HEADERS });
-        const docM = new JSDOM(await resM.text()).window.document;
-        const hM = Array.from(docM.querySelectorAll('#owl-top-today .postDiv, .itemviews .postDiv')).filter(el => !el.closest('.all-items-listing')).map(parseElement).filter(Boolean);
-        const yM = Array.from(docM.querySelectorAll('.col-xl-2 .postDiv')).filter(el => !el.closest('.owl-carousel')).map(parseElement).filter(Boolean);
-        fs.writeFileSync(path.join(DIRS.movies, "hafta.json"), JSON.stringify(hM.slice(0, 10), null, 2));
-        fs.writeFileSync(path.join(DIRS.movies, "yine.json"), JSON.stringify(yM.slice(0, 24), null, 2));
-        console.log(`✅ Movies: Hafta(${Math.min(hM.length, 10)}), Yine(${yM.length})`);
+        const scrapeSection = async (urlH, urlY, dirKey, name, asianFix = false) => {
+            const resH = await fetch(urlH, { headers: HEADERS });
+            const docH = new JSDOM(await resH.text()).window.document;
+            let hData;
+            
+            if (asianFix) {
+                hData = Array.from(docH.querySelectorAll('.postDiv'))
+                             .filter(el => (el.querySelector('a')?.href || "").includes('asian_seasons') && !el.closest('.all-items-listing'));
+            } else {
+                hData = Array.from(docH.querySelectorAll('.owl-item .postDiv, .itemviews .postDiv')).filter(el => !el.closest('.all-items-listing'));
+            }
 
-        // --- 2. المسلسلات ---
-        const resS = await fetch("https://www.fasel-hd.cam/series", { headers: HEADERS });
-        const docS = new JSDOM(await resS.text()).window.document;
-        const hS = Array.from(docS.querySelectorAll('.owl-item .postDiv, .itemviews .postDiv')).map(parseElement).filter(Boolean);
-        const resSY = await fetch("https://www.fasel-hd.cam/episodes", { headers: HEADERS });
-        const yS = Array.from(new JSDOM(await resSY.text()).window.document.querySelectorAll('.col-xl-2 .postDiv')).map(parseElement).filter(Boolean);
-        fs.writeFileSync(path.join(DIRS.series, "hafta.json"), JSON.stringify(hS.slice(0, 10), null, 2));
-        fs.writeFileSync(path.join(DIRS.series, "yine.json"), JSON.stringify(yS.slice(0, 24), null, 2));
-        console.log(`✅ Series: Hafta(${Math.min(hS.length, 10)}), Yine(${yS.length})`);
+            const resY = await fetch(urlY, { headers: HEADERS });
+            const yData = Array.from(new JSDOM(await resY.text()).window.document.querySelectorAll('.col-xl-2 .postDiv'));
 
-        // --- 3. البرامج ---
-        const resT = await fetch("https://www.fasel-hd.cam/tvshows", { headers: HEADERS });
-        const docT = new JSDOM(await resT.text()).window.document;
-        const hT = Array.from(docT.querySelectorAll('.owl-item .postDiv, .itemviews .postDiv')).map(parseElement).filter(Boolean);
-        const resTY = await fetch("https://www.fasel-hd.cam/recent_tvshows", { headers: HEADERS });
-        const yT = Array.from(new JSDOM(await resTY.text()).window.document.querySelectorAll('.col-xl-2 .postDiv')).map(parseElement).filter(Boolean);
-        fs.writeFileSync(path.join(DIRS.tv_show, "hafta.json"), JSON.stringify(hT.slice(0, 10), null, 2));
-        fs.writeFileSync(path.join(DIRS.tv_show, "yine.json"), JSON.stringify(yT.slice(0, 24), null, 2));
-        console.log(`✅ TV Shows: Hafta(${Math.min(hT.length, 10)}), Yine(${yT.length})`);
+            const finalH = hData.map(parseElement).filter(Boolean).slice(0, 10);
+            const finalY = yData.map(parseElement).filter(Boolean).slice(0, 24);
 
-        // --- 4. المسلسلات الآسيوية ---
-        const resA = await fetch("https://www.fasel-hd.cam/asian-series", { headers: HEADERS });
-        const docA = new JSDOM(await resA.text()).window.document;
-        const hA = Array.from(docA.querySelectorAll('.postDiv'))
-                        .filter(el => {
-                            const link = el.querySelector('a')?.href || "";
-                            return link.includes('asian_seasons') && !el.closest('.all-items-listing');
-                        })
-                        .map(parseElement).filter(Boolean);
+            fs.writeFileSync(path.join(DIRS[dirKey], "hafta.json"), JSON.stringify(finalH, null, 2));
+            fs.writeFileSync(path.join(DIRS[dirKey], "yine.json"), JSON.stringify(finalY, null, 2));
+            console.log(`✅ ${name}: Hafta(${finalH.length}), Yine(${finalY.length})`);
+        };
 
-        const resAY = await fetch("https://www.fasel-hd.cam/asian-episodes", { headers: HEADERS });
-        const yA = Array.from(new JSDOM(await resAY.text()).window.document.querySelectorAll('.col-xl-2 .postDiv')).map(parseElement).filter(Boolean);
-        
-        fs.writeFileSync(path.join(DIRS.asian_series, "hafta.json"), JSON.stringify(hA.slice(0, 10), null, 2));
-        fs.writeFileSync(path.join(DIRS.asian_series, "yine.json"), JSON.stringify(yA.slice(0, 24), null, 2));
-        console.log(`✅ Asian Series: Hafta(${Math.min(hA.length, 10)}), Yine(${yA.length})`);
+        // تنفيذ الاستخراج لكل الأقسام
+        await scrapeSection("https://www.fasel-hd.cam/all-movies", "https://www.fasel-hd.cam/all-movies", "movies", "Movies");
+        await scrapeSection("https://www.fasel-hd.cam/series", "https://www.fasel-hd.cam/episodes", "series", "Series");
+        await scrapeSection("https://www.fasel-hd.cam/tvshows", "https://www.fasel-hd.cam/recent_tvshows", "tv_show", "TV Shows");
+        await scrapeSection("https://www.fasel-hd.cam/asian-series", "https://www.fasel-hd.cam/asian-episodes", "asian_series", "Asian Series", true);
+        await scrapeSection("https://www.fasel-hd.cam/anime", "https://www.fasel-hd.cam/recent_anime", "anime", "Anime");
 
-        console.log("🏁 تمت العملية!");
-    } catch (e) { console.error("❌ Error:", e.message); }
+        console.log("🏁 تمت العملية بنجاح كامل!");
+    } catch (e) { console.error("❌ خطأ:", e.message); }
 }
 
 startScraping();
