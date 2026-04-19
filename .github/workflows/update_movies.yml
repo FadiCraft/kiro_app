@@ -1,36 +1,50 @@
-name: Update Movies Data
+name: Update Movies and Series Data
 
+# مواعيد التشغيل
 on:
   schedule:
-    - cron: '0 */6 * * *' # يعمل كل 6 ساعات
-  workflow_dispatch: # يسمح لك بتشغيله يدوياً
+    - cron: '0 */2 * * *' # يعمل تلقائياً كل 6 ساعات
+  workflow_dispatch:      # يسمح لك بتشغيل السكريبت يدوياً من صفحة Actions
 
 jobs:
-  build:
+  scrape-and-update:
     runs-on: ubuntu-latest
 
+    # إعطاء صلاحيات الكتابة للمستودع لحفظ ملفات الـ JSON
     permissions:
       contents: write
 
     steps:
+      # 1. جلب الكود من المستودع
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      # 2. إعداد بيئة Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm' # تسريع العملية في المرات القادمة
 
+      # 3. تثبيت المكتبات المطلوبة
       - name: Install Dependencies
         run: npm install jsdom
 
+      # 4. تشغيل سكربت الاستخراج
       - name: Run Scraper
         run: node scraper.js
 
+      # 5. رفع الملفات الجديدة إلى المستودع
       - name: Commit and Push Changes
         run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
-          git add movies/*.json
-          git commit -m "Update movies data: $(date)" || echo "No changes to commit"
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "actions@github.com"
+          
+          # إضافة الملفات في المجلدات المحددة
+          git add movies/*.json series/*.json
+          
+          # تنفيذ الـ Commit فقط في حال وجود تغييرات حقيقية
+          git commit -m "Automated update: Movies & Series data $(date '+%Y-%m-%d %H:%M')" || echo "No changes to commit"
+          
+          # رفع التغييرات
           git push
