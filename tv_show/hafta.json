@@ -5,7 +5,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2017/02/MV5BNjcyODY5Nzg4Ml5BMl5BanBnXkFtZTgwNDEwNTQ0MTI@._V1_SY1000_CR006741000_AL_-400x600.jpg?resize=400%2C600",
     "quality": "17 حلقة",
     "category": "توك شو",
-    "views": "118784",
+    "views": "118791",
     "imdb": "8.6"
   },
   {
@@ -14,7 +14,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2021/02/image-400x600.jpg?resize=400%2C600",
     "quality": "26 حلقة",
     "category": "كوميدي",
-    "views": "165144",
+    "views": "165148",
     "imdb": ""
   },
   {
@@ -23,7 +23,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2017/04/1148157288-2100976_big-400x600.jpg?resize=400%2C600",
     "quality": "28 حلقة",
     "category": "تلفزيون الواقع",
-    "views": "66884",
+    "views": "66886",
     "imdb": "8.6"
   },
   {
@@ -32,7 +32,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2019/03/MV5BMTg4ODkwODAzMV5BMl5BanBnXkFtZTgwNDMwNDM5NDM@._V1_SY1000_CR007011000_AL_-400x600.jpg?resize=400%2C600",
     "quality": "26 حلقة",
     "category": "كوميدي",
-    "views": "139796",
+    "views": "139799",
     "imdb": "8.6"
   },
   {
@@ -41,7 +41,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2017/06/2aec21f683a3eebd289763d1dbf56881-impractical-jokers-season-giveaways-400x600.jpg?resize=400%2C600",
     "quality": "31 حلقة",
     "category": "تلفزيون الواقع",
-    "views": "65025",
+    "views": "65028",
     "imdb": "8.6"
   },
   {
@@ -50,7 +50,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2023/02/58aa238ee5b9a818732b92b8c37eaffa-400x600.jpg?resize=400%2C600",
     "quality": "26 حلقة",
     "category": "كوميدي",
-    "views": "15510",
+    "views": "15514",
     "imdb": ""
   },
   {
@@ -59,7 +59,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2017/07/5580035_sa.jpg?resize=400%2C600",
     "quality": "25 حلقة",
     "category": "كوميدي",
-    "views": "62598",
+    "views": "62600",
     "imdb": "8.6"
   },
   {
@@ -68,17 +68,8 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2017/09/ImpracticalJokers_S5-400x600.jpg?resize=400%2C600",
     "quality": "25 حلقة",
     "category": "كوميدي",
-    "views": "64904",
+    "views": "64909",
     "imdb": "8.6"
-  },
-  {
-    "title": "برنامج The Grand Tour – الموسم الرابع",
-    "link": "https://www.fasel-hd.cam/tvshows/%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d8%ac-grand-tour-%d8%a7%d9%84%d9%85%d9%88%d8%b3%d9%85-%d8%a7%d9%84%d8%b1%d8%a7%d8%a8%d8%b9",
-    "image": "https://static.faselhdcdn.com/wp-content/uploads/2019/12/The-Grand-Tour-1.jpg?resize=400%2C600",
-    "quality": "14 حلقة",
-    "category": "توك شو",
-    "views": "52488",
-    "imdb": "8.7"
   },
   {
     "title": "عرض Dave Chappelle Sticks & Stones مترجم",
@@ -86,7 +77,16 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2019/09/MV5BOWQ2NDZhNGMtOWMwNS00ZWJhLTk2ZGEtY2VkOTY3ZTljNDQ2XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SY1000_SX800_AL_-400x600.jpg?resize=400%2C600",
     "quality": "1 حلقة",
     "category": "عرض كوميدي",
-    "views": "48222",
+    "views": "48225",
     "imdb": "8.5"
+  },
+  {
+    "title": "برنامج The Grand Tour – الموسم الرابع",
+    "link": "https://www.fasel-hd.cam/tvshows/%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d8%ac-grand-tour-%d8%a7%d9%84%d9%85%d9%88%d8%b3%d9%85-%d8%a7%d9%84%d8%b1%d8%a7%d8%a8%d8%b9",
+    "image": "https://static.faselhdcdn.com/wp-content/uploads/2019/12/The-Grand-Tour-1.jpg?resize=400%2C600",
+    "quality": "14 حلقة",
+    "category": "توك شو",
+    "views": "52490",
+    "imdb": "8.7"
   }
 ]
