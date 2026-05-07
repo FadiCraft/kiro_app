@@ -10,7 +10,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/653.png",
     "nameteam2": "وادي دجلة",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/8311.png",
-    "id": 115218,
+    "id": 564139,
     "watchServers": "غير متوفر"
   },
   {
@@ -24,21 +24,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/8310.png",
     "nameteam2": "الجونة",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/617.png",
-    "id": 984602,
-    "watchServers": "غير متوفر"
-  },
-  {
-    "url": "https://www.kooora-lives1.info/",
-    "status": "لم تبدأ بعد",
-    "league": "غير معروف",
-    "time": "08:00 PM",
-    "channel": "غير معروف",
-    "score": "0 - 0",
-    "nameteam1": "كهرباء الاسماعيلية",
-    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/19506.png",
-    "nameteam2": "فاركو",
-    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/1880.png",
-    "id": 708659,
+    "id": 137223,
     "watchServers": "غير متوفر"
   },
   {
@@ -52,7 +38,21 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/12724.png",
     "nameteam2": "الاتحاد السكندري",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/13.png",
-    "id": 991007,
+    "id": 812939,
+    "watchServers": "غير متوفر"
+  },
+  {
+    "url": "https://www.kooora-lives1.info/",
+    "status": "لم تبدأ بعد",
+    "league": "غير معروف",
+    "time": "08:00 PM",
+    "channel": "غير معروف",
+    "score": "0 - 0",
+    "nameteam1": "كهرباء الاسماعيلية",
+    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/19506.png",
+    "nameteam2": "فاركو",
+    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/1880.png",
+    "id": 264975,
     "watchServers": "غير متوفر"
   },
   {
@@ -66,7 +66,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/12745.png",
     "nameteam2": "الهلال",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/269.png",
-    "id": 900641,
+    "id": 465484,
     "watchServers": "غير متوفر"
   },
   {
@@ -80,7 +80,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/341.png",
     "nameteam2": "آينتراخت فرانكفورت",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/07/337.png",
-    "id": 865331,
+    "id": 385243,
     "watchServers": "غير متوفر"
   },
   {
@@ -94,7 +94,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/144.png",
     "nameteam2": "ساسولو",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/266.png",
-    "id": 444931,
+    "id": 696900,
     "watchServers": "غير متوفر"
   },
   {
@@ -108,7 +108,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/07/481.png",
     "nameteam2": "نانت",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/486.png",
-    "id": 588882,
+    "id": 116436,
     "watchServers": "غير متوفر"
   },
   {
@@ -122,7 +122,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/150.png",
     "nameteam2": "أوساسونا",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/118.png",
-    "id": 755866,
+    "id": 281899,
     "watchServers": "غير متوفر"
   }
 ]
