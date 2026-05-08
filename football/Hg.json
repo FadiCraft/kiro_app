@@ -1,19 +1,5 @@
 [
   {
-    "url": "https://kora24.site88.one/read/275/%D9%87%D8%AC%D9%88%D9%85-%D8%BA%D9%8A%D8%B1-%D9%85%D8%B3%D8%A8%D9%88%D9%82-%D8%B9%D9%84%D9%89-%D9%81%D9%84%D9%88%D8%B1%D9%86%D8%AA%D9%8A%D9%86%D9%88-%D8%A8%D9%8A%D8%B1%D9%8A%D8%B2",
-    "status": "جارية الان",
-    "league": "السعودية, كأس الملك - النهائي",
-    "time": "",
-    "channel": "MBC Action",
-    "score": "0 - 0",
-    "nameteam1": "الخلود",
-    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/12745.png",
-    "nameteam2": "الهلال",
-    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/269.png",
-    "id": 427109,
-    "watchServers": "https://kora24.site88.one/embed/275"
-  },
-  {
     "url": "https://www.kooora-lives1.info/",
     "status": "جارية الان",
     "league": "ألمانيا, الدوري الألماني",
@@ -24,7 +10,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/341.png",
     "nameteam2": "آينتراخت فرانكفورت",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/07/337.png",
-    "id": 278528,
+    "id": 559106,
     "watchServers": "غير متوفر"
   },
   {
@@ -38,7 +24,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/144.png",
     "nameteam2": "ساسولو",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/266.png",
-    "id": 326066,
+    "id": 479637,
     "watchServers": "https://kora24.site88.one/embed/274"
   },
   {
@@ -52,7 +38,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/07/481.png",
     "nameteam2": "نانت",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/486.png",
-    "id": 827346,
+    "id": 832538,
     "watchServers": "https://kora24.site88.one/embed/272"
   },
   {
@@ -66,7 +52,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/150.png",
     "nameteam2": "أوساسونا",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/118.png",
-    "id": 183023,
+    "id": 781653,
     "watchServers": "https://kora24.site88.one/embed/273"
   },
   {
@@ -80,7 +66,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/653.png",
     "nameteam2": "وادي دجلة",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/8311.png",
-    "id": 216385,
+    "id": 198248,
     "watchServers": "المباراة انتهت"
   },
   {
@@ -94,7 +80,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/8310.png",
     "nameteam2": "الجونة",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/617.png",
-    "id": 662331,
+    "id": 765917,
     "watchServers": "المباراة انتهت"
   },
   {
@@ -108,7 +94,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/12724.png",
     "nameteam2": "الاتحاد السكندري",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/13.png",
-    "id": 396173,
+    "id": 399262,
     "watchServers": "المباراة انتهت"
   },
   {
@@ -122,7 +108,21 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/19506.png",
     "nameteam2": "فاركو",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/1880.png",
-    "id": 483437,
+    "id": 808805,
+    "watchServers": "المباراة انتهت"
+  },
+  {
+    "url": "https://kora24.site88.one/read/275/%D9%87%D8%AC%D9%88%D9%85-%D8%BA%D9%8A%D8%B1-%D9%85%D8%B3%D8%A8%D9%88%D9%82-%D8%B9%D9%84%D9%89-%D9%81%D9%84%D9%88%D8%B1%D9%86%D8%AA%D9%8A%D9%86%D9%88-%D8%A8%D9%8A%D8%B1%D9%8A%D8%B2",
+    "status": "انتهت",
+    "league": "السعودية, كأس الملك - النهائي",
+    "time": "",
+    "channel": "MBC Action",
+    "score": "0 - 0",
+    "nameteam1": "الخلود",
+    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/12745.png",
+    "nameteam2": "الهلال",
+    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/269.png",
+    "id": 489979,
     "watchServers": "المباراة انتهت"
   }
 ]
