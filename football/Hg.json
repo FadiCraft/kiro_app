@@ -10,7 +10,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/617.png",
     "nameteam2": "كهرباء الاسماعيلية",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/19506.png",
-    "id": 263793,
+    "id": 819100,
     "watchServers": "غير متوفر"
   },
   {
@@ -24,7 +24,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/1880.png",
     "nameteam2": "مودرن سبورت",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/12724.png",
-    "id": 648197,
+    "id": 410056,
     "watchServers": "غير متوفر"
   },
   {
@@ -38,21 +38,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/12745.png",
     "nameteam2": "الأخدود",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/12747.png",
-    "id": 321403,
-    "watchServers": "غير متوفر"
-  },
-  {
-    "url": "https://www.kooora-lives1.info/",
-    "status": "لم تبدأ بعد",
-    "league": "إسبانيا, الدوري الإسباني",
-    "time": "08:00 PM",
-    "channel": "beIN SPORTS HD 1",
-    "score": "0 - 0",
-    "nameteam1": "سيلتا فيجو",
-    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/117.png",
-    "nameteam2": "ليفانتي",
-    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/150.png",
-    "id": 277597,
+    "id": 750655,
     "watchServers": "غير متوفر"
   },
   {
@@ -66,7 +52,21 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/8311.png",
     "nameteam2": "الإسماعيلي",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/5.png",
-    "id": 833537,
+    "id": 286985,
+    "watchServers": "غير متوفر"
+  },
+  {
+    "url": "https://www.kooora-lives1.info/",
+    "status": "لم تبدأ بعد",
+    "league": "إسبانيا, الدوري الإسباني",
+    "time": "08:00 PM",
+    "channel": "beIN SPORTS HD 1",
+    "score": "0 - 0",
+    "nameteam1": "سيلتا فيجو",
+    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/117.png",
+    "nameteam2": "ليفانتي",
+    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/150.png",
+    "id": 957684,
     "watchServers": "غير متوفر"
   },
   {
@@ -80,7 +80,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/177.png",
     "nameteam2": "الهلال",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/269.png",
-    "id": 640213,
+    "id": 960727,
     "watchServers": "غير متوفر"
   },
   {
@@ -94,7 +94,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/123.png",
     "nameteam2": "إلتشي",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/156.png",
-    "id": 803284,
+    "id": 195187,
     "watchServers": "غير متوفر"
   },
   {
@@ -108,21 +108,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/118.png",
     "nameteam2": "أتلتيكو مدريد",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/134.png",
-    "id": 295090,
+    "id": 777138,
     "watchServers": "غير متوفر"
-  },
-  {
-    "url": "https://www.kooora-lives1.info/",
-    "status": "انتهت",
-    "league": "إيطاليا, الدوري الإيطالي",
-    "time": "",
-    "channel": "Starzplay",
-    "score": "3 - 2",
-    "nameteam1": "نابولي",
-    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/757.png",
-    "nameteam2": "بولونيا",
-    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/129.png",
-    "id": 459939,
-    "watchServers": "المباراة انتهت"
   }
 ]
