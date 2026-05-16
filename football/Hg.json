@@ -6,11 +6,25 @@
     "time": "04:30 PM",
     "channel": "شاهد - Shahid VIP",
     "score": "0 - 0",
+    "nameteam1": "بايرن ميونخ",
+    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/331.png",
+    "nameteam2": "كولن",
+    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/10/350.png",
+    "id": 131982,
+    "watchServers": "غير متوفر"
+  },
+  {
+    "url": "https://www.kooora-lives1.info/",
+    "status": "لم تبدأ بعد",
+    "league": "ألمانيا, الدوري الألماني",
+    "time": "04:30 PM",
+    "channel": "شاهد - Shahid VIP",
+    "score": "0 - 0",
     "nameteam1": "باير ليفركوزن",
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/333.png",
     "nameteam2": "هامبورج",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/334.png",
-    "id": 258420,
+    "id": 276445,
     "watchServers": "غير متوفر"
   },
   {
@@ -24,21 +38,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/332.png",
     "nameteam2": "بوروسيا دورتموند",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/341.png",
-    "id": 486279,
-    "watchServers": "غير متوفر"
-  },
-  {
-    "url": "https://www.kooora-lives1.info/",
-    "status": "لم تبدأ بعد",
-    "league": "ألمانيا, الدوري الألماني",
-    "time": "04:30 PM",
-    "channel": "شاهد - Shahid VIP",
-    "score": "0 - 0",
-    "nameteam1": "بايرن ميونخ",
-    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/331.png",
-    "nameteam2": "كولن",
-    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/10/350.png",
-    "id": 365274,
+    "id": 700655,
     "watchServers": "غير متوفر"
   },
   {
@@ -52,7 +52,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/89.png",
     "nameteam2": "مانشستر سيتي",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/94.png",
-    "id": 205350,
+    "id": 950608,
     "watchServers": "غير متوفر"
   },
   {
@@ -66,7 +66,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/269.png",
     "nameteam2": "نيوم",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/55793.png",
-    "id": 129344,
+    "id": 614276,
     "watchServers": "غير متوفر"
   },
   {
@@ -80,7 +80,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/12747.png",
     "nameteam2": "الخليج",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/188.png",
-    "id": 878512,
+    "id": 121309,
     "watchServers": "غير متوفر"
   },
   {
@@ -94,7 +94,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/1.png",
     "nameteam2": "الخلود",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/12745.png",
-    "id": 412114,
+    "id": 140606,
     "watchServers": "غير متوفر"
   },
   {
@@ -108,7 +108,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/2.png",
     "nameteam2": "اتحاد العاصمة",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/11/8220.png",
-    "id": 196301,
+    "id": 926970,
     "watchServers": "غير متوفر"
   }
 ]
