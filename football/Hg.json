@@ -4,13 +4,13 @@
     "status": "لم تبدأ بعد",
     "league": "غير معروف",
     "time": "05:00 PM",
-    "channel": "أون سبورت",
+    "channel": "أون سبورت ماكس",
     "score": "0 - 0",
-    "nameteam1": "كهرباء الاسماعيلية",
-    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/19506.png",
-    "nameteam2": "حرس الحدود",
-    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/149.png",
-    "id": 670694,
+    "nameteam1": "طلائع الجيش",
+    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/304.png",
+    "nameteam2": "فاركو",
+    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/1880.png",
+    "id": 842935,
     "watchServers": "غير متوفر"
   },
   {
@@ -18,13 +18,13 @@
     "status": "لم تبدأ بعد",
     "league": "غير معروف",
     "time": "05:00 PM",
-    "channel": "أون سبورت ماكس",
+    "channel": "أون سبورت",
     "score": "0 - 0",
-    "nameteam1": "طلائع الجيش",
-    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/304.png",
-    "nameteam2": "فاركو",
-    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/1880.png",
-    "id": 381548,
+    "nameteam1": "كهرباء الاسماعيلية",
+    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/19506.png",
+    "nameteam2": "حرس الحدود",
+    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/149.png",
+    "id": 264282,
     "watchServers": "غير متوفر"
   },
   {
@@ -38,7 +38,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/8310.png",
     "nameteam2": "وادي دجلة",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/8311.png",
-    "id": 394871,
+    "id": 605804,
     "watchServers": "غير متوفر"
   },
   {
@@ -52,7 +52,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/7.png",
     "nameteam2": "الاتحاد السكندري",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/13.png",
-    "id": 896976,
+    "id": 749161,
     "watchServers": "غير متوفر"
   },
   {
@@ -66,7 +66,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/83.png",
     "nameteam2": "بيرنلي",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/12.png",
-    "id": 923335,
+    "id": 387547,
     "watchServers": "غير متوفر"
   }
 ]
