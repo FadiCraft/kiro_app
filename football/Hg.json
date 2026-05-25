@@ -1,30 +1,30 @@
 [
   {
     "url": "https://www.kooora-lives1.info/",
-    "status": "انتهت",
-    "league": "مصر, كأس الرابطة المصرية - نصف النهائي",
-    "time": "",
-    "channel": "أون سبورت",
+    "status": "لم تبدأ بعد",
+    "league": "دولي, مباريات ودية دولية",
+    "time": "08:00 PM",
+    "channel": "غير معروف",
     "score": "0 - 0",
-    "nameteam1": "إنبي",
-    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/8300.png",
-    "nameteam2": "وادي دجلة",
-    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/8311.png",
-    "id": 350543,
-    "watchServers": "المباراة انتهت"
+    "nameteam1": "المغرب",
+    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5093.png",
+    "nameteam2": "بورندي",
+    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2026/03/5600.png",
+    "id": 193010,
+    "watchServers": "غير متوفر"
   },
   {
     "url": "https://www.kooora-lives1.info/",
-    "status": "انتهت",
-    "league": "مصر, كأس الرابطة المصرية - نصف النهائي",
-    "time": "",
-    "channel": "أون سبورت",
-    "score": "1 - 0",
-    "nameteam1": "زد",
-    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/1683.png",
-    "nameteam2": "المصري",
-    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/8.png",
-    "id": 465048,
-    "watchServers": "المباراة انتهت"
+    "status": "لم تبدأ بعد",
+    "league": "فرنسا, الدوري الفرنسي - الهبوط/الصعود",
+    "time": "09:45 PM",
+    "channel": "غير معروف",
+    "score": "0 - 0",
+    "nameteam1": "سانت إيتيان",
+    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/12/474.png",
+    "nameteam2": "نيس",
+    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/470.png",
+    "id": 941737,
+    "watchServers": "غير متوفر"
   }
 ]
