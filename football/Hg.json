@@ -3,20 +3,6 @@
     "url": "https://www.kooora-lives1.info/",
     "status": "لم تبدأ بعد",
     "league": "دولي, مباريات ودية دولية",
-    "time": "03:00 AM",
-    "channel": "STC TV",
-    "score": "0 - 0",
-    "nameteam1": "الإكوادور",
-    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5075.png",
-    "nameteam2": "السعودية",
-    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/5087.png",
-    "id": 105538,
-    "watchServers": "غير متوفر"
-  },
-  {
-    "url": "https://www.kooora-lives1.info/",
-    "status": "لم تبدأ بعد",
-    "league": "دولي, مباريات ودية دولية",
     "time": "04:00 PM",
     "channel": "الأردن الرياضية",
     "score": "0 - 0",
@@ -24,7 +10,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/09/5032.png",
     "nameteam2": "الأردن",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/5083.png",
-    "id": 691290,
+    "id": 830840,
     "watchServers": "غير متوفر"
   },
   {
@@ -38,7 +24,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5038.png",
     "nameteam2": "أوكرانيا",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/09/5057.png",
-    "id": 227023,
+    "id": 159572,
     "watchServers": "غير متوفر"
   },
   {
@@ -52,7 +38,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/2372.png",
     "nameteam2": "فنلندا",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5045.png",
-    "id": 157050,
+    "id": 650519,
     "watchServers": "غير متوفر"
   },
   {
@@ -66,7 +52,21 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/2389.png",
     "nameteam2": "السنغال",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5102.png",
-    "id": 573123,
+    "id": 670445,
     "watchServers": "غير متوفر"
+  },
+  {
+    "url": "https://www.kooora-lives1.info/",
+    "status": "انتهت",
+    "league": "دولي, مباريات ودية دولية",
+    "time": "",
+    "channel": "STC TV",
+    "score": "0 - 0",
+    "nameteam1": "الإكوادور",
+    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5075.png",
+    "nameteam2": "السعودية",
+    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/5087.png",
+    "id": 502105,
+    "watchServers": "المباراة انتهت"
   }
 ]
