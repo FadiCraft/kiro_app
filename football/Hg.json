@@ -1,19 +1,5 @@
 [
   {
-    "url": "https://kora24.site88.one/read/458/3-%D8%A7%D8%B3%D8%A8%D8%A7%D8%A8-%D8%AA%D8%B9%D8%AB%D8%B1-%D8%B5%D9%81%D9%82%D8%A9-%D8%AA%D8%B9%D8%A7%D9%82%D8%AF-%D8%A8%D8%B1%D8%B4%D9%84%D9%88%D9%86%D8%A9-%D9%85%D8%B9-%D8%B3%D9%8A%D9%84%D9%81%D8%A7",
-    "status": "جارية الان",
-    "league": "دولي, مباريات ودية دولية",
-    "time": "",
-    "channel": "أبو ظبي الرياضية 1",
-    "score": "0 - 0",
-    "nameteam1": "البرازيل",
-    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/2379.png",
-    "nameteam2": "بنما",
-    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5414.png",
-    "id": 783010,
-    "watchServers": "https://kora24.site88.one/embed/458"
-  },
-  {
     "url": "https://www.kooora-lives1.info/",
     "status": "لم تبدأ بعد",
     "league": "مصر, كأس الرابطة المصرية - نصف النهائي",
@@ -24,7 +10,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/8.png",
     "nameteam2": "زد",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/1683.png",
-    "id": 703333,
+    "id": 552315,
     "watchServers": "غير متوفر"
   },
   {
@@ -38,7 +24,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/09/5039.png",
     "nameteam2": "مالطا",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5035.png",
-    "id": 554813,
+    "id": 371480,
     "watchServers": "غير متوفر"
   },
   {
@@ -52,7 +38,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/2376.png",
     "nameteam2": "السويد",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/2371.png",
-    "id": 892101,
+    "id": 467937,
     "watchServers": "غير متوفر"
   },
   {
@@ -66,7 +52,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/8311.png",
     "nameteam2": "إنبي",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/8300.png",
-    "id": 931539,
+    "id": 902476,
     "watchServers": "غير متوفر"
   },
   {
@@ -80,7 +66,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/09/5047.png",
     "nameteam2": "مقدونيا الشمالية",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5068.png",
-    "id": 978492,
+    "id": 909132,
     "watchServers": "غير متوفر"
   },
   {
@@ -94,7 +80,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5059.png",
     "nameteam2": "تونس",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5104.png",
-    "id": 710828,
+    "id": 563416,
     "watchServers": "غير متوفر"
   },
   {
@@ -108,7 +94,21 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2026/05/2320.png",
     "nameteam2": "مصر تحت 17",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2026/05/2330.png",
-    "id": 925305,
+    "id": 590343,
     "watchServers": "غير متوفر"
+  },
+  {
+    "url": "https://www.kooora-lives1.info/",
+    "status": "انتهت",
+    "league": "دولي, مباريات ودية دولية",
+    "time": "",
+    "channel": "أبو ظبي الرياضية 1",
+    "score": "6 - 2",
+    "nameteam1": "البرازيل",
+    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/2379.png",
+    "nameteam2": "بنما",
+    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5414.png",
+    "id": 352357,
+    "watchServers": "المباراة انتهت"
   }
 ]
