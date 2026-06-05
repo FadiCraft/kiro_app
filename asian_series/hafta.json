@@ -5,7 +5,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2020/10/xnNnq_4f-400x600.jpg",
     "quality": "موسم واحد",
     "category": "Comedy",
-    "views": "32335",
+    "views": "32336",
     "imdb": ""
   },
   {
@@ -14,7 +14,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2019/12/MV5BNTNiMjhkNjEtOTIwYy00MmM1LTk1OGEtMDBlNjNhMjI5ZjY3XkEyXkFqcGdeQXVyMzE4MDkyNTA@._V1_SY1000_CR006671000_AL_-400x600.jpg",
     "quality": "موسم واحد",
     "category": "Drama",
-    "views": "51610",
+    "views": "51611",
     "imdb": ""
   },
   {
@@ -59,7 +59,16 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2021/05/xJdOy_4f-400x600.jpg",
     "quality": "موسم واحد",
     "category": "Comedy",
-    "views": "23051",
+    "views": "23055",
+    "imdb": ""
+  },
+  {
+    "title": "مسلسل High School Return of a Gangster",
+    "link": "https://www.fasel-hd.cam/asian_seasons/%d9%85%d8%b3%d9%84%d8%b3%d9%84-high-school-return-gangster",
+    "image": "https://static.faselhdcdn.com/wp-content/uploads/2024/05/f386758bf227bed5a5da69a3eaeca068.jpg",
+    "quality": "موسم واحد",
+    "category": "Fantasy",
+    "views": "10328",
     "imdb": ""
   },
   {
@@ -72,21 +81,12 @@
     "imdb": ""
   },
   {
-    "title": "مسلسل High School Return of a Gangster",
-    "link": "https://www.fasel-hd.cam/asian_seasons/%d9%85%d8%b3%d9%84%d8%b3%d9%84-high-school-return-gangster",
-    "image": "https://static.faselhdcdn.com/wp-content/uploads/2024/05/f386758bf227bed5a5da69a3eaeca068.jpg",
-    "quality": "موسم واحد",
-    "category": "Fantasy",
-    "views": "10323",
-    "imdb": ""
-  },
-  {
     "title": "مسلسل Taxi Driver",
     "link": "https://www.fasel-hd.cam/asian_seasons/%d9%85%d8%b3%d9%84%d8%b3%d9%84-taxi-driver",
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2021/04/2Bkww_4f-400x600.jpg",
     "quality": "3 مواسم",
     "category": "Action",
-    "views": "52554",
+    "views": "52558",
     "imdb": ""
   }
 ]
