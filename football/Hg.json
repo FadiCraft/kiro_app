@@ -10,7 +10,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/2521747221508.png",
     "nameteam2": "تونس",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5104.png",
-    "id": 700597,
+    "id": 337256,
     "watchServers": "غير متوفر"
   },
   {
@@ -24,7 +24,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/download-1.png",
     "nameteam2": "تشيلي",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5074.png",
-    "id": 371663,
+    "id": 828889,
     "watchServers": "غير متوفر"
   },
   {
@@ -38,7 +38,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5060.png",
     "nameteam2": "ويلز",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5043.png",
-    "id": 281288,
+    "id": 865682,
     "watchServers": "غير متوفر"
   },
   {
@@ -52,7 +52,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5029.png",
     "nameteam2": "لوكسمبورج",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/09/5033.png",
-    "id": 690496,
+    "id": 475201,
     "watchServers": "غير متوفر"
   },
   {
@@ -66,21 +66,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/2389.png",
     "nameteam2": "ألمانيا",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/2372.png",
-    "id": 218795,
-    "watchServers": "غير متوفر"
-  },
-  {
-    "url": "https://www.kooora-lives1.info/",
-    "status": "لم تبدأ بعد",
-    "league": "دولي, مباريات ودية دولية",
-    "time": "11:00 PM",
-    "channel": "الكاس 1",
-    "score": "0 - 0",
-    "nameteam1": "قطر",
-    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5079.png",
-    "nameteam2": "السلفادور",
-    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5415.png",
-    "id": 512603,
+    "id": 904752,
     "watchServers": "غير متوفر"
   },
   {
@@ -94,7 +80,21 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5054.png",
     "nameteam2": "نيوزلندا",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2026/06/2391.png",
-    "id": 632070,
+    "id": 485771,
+    "watchServers": "غير متوفر"
+  },
+  {
+    "url": "https://www.kooora-lives1.info/",
+    "status": "لم تبدأ بعد",
+    "league": "دولي, مباريات ودية دولية",
+    "time": "11:00 PM",
+    "channel": "الكاس 1",
+    "score": "0 - 0",
+    "nameteam1": "قطر",
+    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5079.png",
+    "nameteam2": "السلفادور",
+    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5415.png",
+    "id": 967893,
     "watchServers": "غير متوفر"
   },
   {
@@ -108,7 +108,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/10/8741.png",
     "nameteam2": "السعودية",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/5087.png",
-    "id": 534827,
+    "id": 234932,
     "watchServers": "المباراة انتهت"
   },
   {
@@ -122,7 +122,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/2388.png",
     "nameteam2": "أيرلندا",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/09/5064.png",
-    "id": 271791,
+    "id": 755292,
     "watchServers": "المباراة انتهت"
   },
   {
@@ -136,7 +136,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/18361.png",
     "nameteam2": "كينيا",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/5410.png",
-    "id": 444213,
+    "id": 485066,
     "watchServers": "المباراة انتهت"
   }
 ]
