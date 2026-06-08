@@ -1,44 +1,30 @@
 [
   {
-    "url": "https://www.kooora-lives1.info/",
-    "status": "جارية الان",
-    "league": "مصر, كأس الرابطة المصرية - النهائي",
-    "time": "",
-    "channel": "غير معروف",
-    "score": "0 - 0",
-    "nameteam1": "إنبي",
-    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/8300.png",
-    "nameteam2": "المصري",
-    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/8.png",
-    "id": 130900,
-    "watchServers": "https://pxdrop.lijit.com/a/t_.htm?ver=1.2063.1155&cid=c026&cls=sync#cls=sync&dmn=www.kooora-lives1.info&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2063.1155&ell=d&cck=ljt_reader&pn=%2Fball-wzv%2F&qs=na&rdn=www.kooora-lives1.info&rpn=%2Fball-wzv%2F&rqs=na&ipaddr=MTI4LjI0LjE2MS4xODE%3D&cc=US&cont=NA&rc=WY"
-  },
-  {
     "url": "https://kora24.site88.one/read/512/%D8%A3%D8%AA%D9%84%D8%AA%D9%8A%D9%83%D9%88-%D9%85%D8%AF%D8%B1%D9%8A%D8%AF-%D9%8A%D8%AD%D8%AF%D8%AF-%D8%B3%D8%B9%D8%B1-%D8%AC%D9%88%D9%84%D9%8A%D8%A7%D9%86-%D8%A3%D9%84%D9%81%D8%A7%D8%B1%D9%8A%D8%B2",
-    "status": "لم تبدأ بعد",
+    "status": "جارية الان",
     "league": "دولي, مباريات ودية دولية",
-    "time": "09:45 PM",
+    "time": "",
     "channel": "beIN Sports 3 HD",
     "score": "0 - 0",
     "nameteam1": "هولندا",
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/2377.png",
     "nameteam2": "أوزبكستان",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5085.png",
-    "id": 655758,
+    "id": 958371,
     "watchServers": "https://kora24.site88.one/embed/512"
   },
   {
     "url": "https://kora24.site88.one/read/511/%D8%A7%D8%B3%D8%AA%D8%A8%D8%B9%D8%A7%D8%AF-%D8%A7%D9%84%D8%A8%D8%B1%D8%A7%D8%B2%D9%8A%D9%84%D9%8A-%D9%85%D9%86-%D8%AD%D8%B3%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%A8%D8%A7%D8%B1%D8%B3%D8%A7-%D9%84%D9%85%D8%AC%D8%B1%D8%AF-%D9%88%D8%B5%D9%88%D9%84-%D8%B5%D9%81%D9%82%D8%A7%D8%AA-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D8%A3%D9%85%D8%B1-%D8%BA%D9%8A%D8%B1-%D9%85%D9%86%D8%B7%D9%82%D9%8A-%D8%AE%D8%A7%D8%B5%D8%A9-%D8%A8%D8%B9%D8%AF-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D9%8A%D8%A7%D8%AA",
-    "status": "لم تبدأ بعد",
+    "status": "جارية الان",
     "league": "دولي, مباريات ودية دولية",
-    "time": "10:10 PM",
+    "time": "",
     "channel": "beIN SPORTS HD 1",
     "score": "0 - 0",
     "nameteam1": "فرنسا",
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/download.png",
     "nameteam2": "إيرلندا الشمالية",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/09/5037.png",
-    "id": 375714,
+    "id": 303710,
     "watchServers": "https://kora24.site88.one/embed/511"
   },
   {
@@ -52,7 +38,7 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5071.png",
     "nameteam2": "الأردن",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/5083.png",
-    "id": 691103,
+    "id": 633004,
     "watchServers": "المباراة انتهت"
   },
   {
@@ -66,7 +52,21 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/1683.png",
     "nameteam2": "وادي دجلة",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/8311.png",
-    "id": 709235,
+    "id": 488720,
+    "watchServers": "المباراة انتهت"
+  },
+  {
+    "url": "https://www.kooora-lives1.info/",
+    "status": "انتهت",
+    "league": "مصر, كأس الرابطة المصرية - النهائي",
+    "time": "",
+    "channel": "غير معروف",
+    "score": "0 - 0",
+    "nameteam1": "إنبي",
+    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/8300.png",
+    "nameteam2": "المصري",
+    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/05/8.png",
+    "id": 192917,
     "watchServers": "المباراة انتهت"
   }
 ]
