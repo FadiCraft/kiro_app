@@ -5,7 +5,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2021/02/image-400x600.jpg?resize=400%2C600",
     "quality": "26 حلقة",
     "category": "كوميدي",
-    "views": "165874",
+    "views": "165879",
     "imdb": ""
   },
   {
@@ -14,7 +14,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2022/06/MV5BNGM3YmE2OWQtNzk4MS00ZTc0LTlkMDctNjI3ZWZlODhlYzFmXkEyXkFqcGdeQXVyMTUwMzM5ODkz._V1_-400x600.jpg?resize=400%2C600",
     "quality": "23 حلقة",
     "category": "برنامج مسابقات غنائي",
-    "views": "14640",
+    "views": "14645",
     "imdb": ""
   },
   {
@@ -23,7 +23,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2017/02/MV5BNjcyODY5Nzg4Ml5BMl5BanBnXkFtZTgwNDEwNTQ0MTI@._V1_SY1000_CR006741000_AL_-400x600.jpg?resize=400%2C600",
     "quality": "17 حلقة",
     "category": "توك شو",
-    "views": "119658",
+    "views": "119661",
     "imdb": "8.6"
   },
   {
@@ -32,7 +32,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2021/06/AGT_S16-KeyArt-Logo-Vertical-852x1136-1-400x600.jpg?resize=400%2C600",
     "quality": "23 حلقة",
     "category": "برنامج مسابقات غنائي",
-    "views": "16834",
+    "views": "16837",
     "imdb": ""
   },
   {
@@ -41,7 +41,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2019/03/MV5BMTg4ODkwODAzMV5BMl5BanBnXkFtZTgwNDMwNDM5NDM@._V1_SY1000_CR007011000_AL_-400x600.jpg?resize=400%2C600",
     "quality": "26 حلقة",
     "category": "كوميدي",
-    "views": "140425",
+    "views": "140433",
     "imdb": "8.6"
   },
   {
@@ -50,7 +50,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2023/06/fdd760c9423fb36d68b2f23d91fb9930.jpg?resize=400%2C600",
     "quality": "23 حلقة",
     "category": "برنامج مسابقات غنائي",
-    "views": "12015",
+    "views": "12019",
     "imdb": ""
   },
   {
@@ -59,7 +59,16 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2017/04/1148157288-2100976_big-400x600.jpg?resize=400%2C600",
     "quality": "28 حلقة",
     "category": "تلفزيون الواقع",
-    "views": "67427",
+    "views": "67434",
+    "imdb": "8.6"
+  },
+  {
+    "title": "برنامج Impractical Jokers الموسم السابع",
+    "link": "https://www.fasel-hd.cam/tvshows/%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d8%ac-impractical-jokers-%d8%a7%d9%84%d9%85%d9%88%d8%b3%d9%85-%d8%a7%d9%84%d8%b3%d8%a7%d8%a8%d8%b9",
+    "image": "https://static.faselhdcdn.com/wp-content/uploads/2018/02/643x0w-400x600.jpg?resize=400%2C600",
+    "quality": "26 حلقة",
+    "category": "كوميدي",
+    "views": "99980",
     "imdb": "8.6"
   },
   {
@@ -68,17 +77,8 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2022/09/96d8864538a88a1e89a7e0daa3b26280-400x600.jpg?resize=400%2C600",
     "quality": "",
     "category": "توك شو",
-    "views": "20566",
+    "views": "20568",
     "imdb": ""
-  },
-  {
-    "title": "برنامج Impractical Jokers الموسم السابع",
-    "link": "https://www.fasel-hd.cam/tvshows/%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d8%ac-impractical-jokers-%d8%a7%d9%84%d9%85%d9%88%d8%b3%d9%85-%d8%a7%d9%84%d8%b3%d8%a7%d8%a8%d8%b9",
-    "image": "https://static.faselhdcdn.com/wp-content/uploads/2018/02/643x0w-400x600.jpg?resize=400%2C600",
-    "quality": "26 حلقة",
-    "category": "كوميدي",
-    "views": "99973",
-    "imdb": "8.6"
   },
   {
     "title": "‫برنامج Impractical Jokers الموسم الثالث",
@@ -86,7 +86,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2017/06/2aec21f683a3eebd289763d1dbf56881-impractical-jokers-season-giveaways-400x600.jpg?resize=400%2C600",
     "quality": "31 حلقة",
     "category": "تلفزيون الواقع",
-    "views": "65598",
+    "views": "65604",
     "imdb": "8.6"
   }
 ]
