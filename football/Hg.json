@@ -1,19 +1,5 @@
 [
   {
-    "url": "https://a1.koora24.sbs/read/73/%D8%B4%D8%A7%D9%87%D8%AF-%D8%AA%D8%B4%D9%83%D9%8A%D9%84%D8%A9-%D9%83%D9%86%D8%AF%D8%A7-%D8%A7%D9%84%D9%85%D8%AA%D9%88%D9%82%D8%B9%D8%A9-%D8%A3%D9%85%D8%A7%D9%85-%D8%B3%D9%88%D9%8A%D8%B3%D8%B1%D8%A7-%D9%88%D9%86%D8%B3%D8%A8%D8%A9-%D8%A7%D9%84%D9%81%D9%88%D8%B2",
-    "status": "لم تبدأ بعد",
-    "league": "دولي, كأس العالم - المجموعة ك",
-    "time": "05:00 AM",
-    "channel": "beIN SPORTS MAX 2",
-    "score": "0 - 0",
-    "nameteam1": "كولومبيا",
-    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5071.png",
-    "nameteam2": "الكونغو الديمقراطية",
-    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/14650.png",
-    "id": 372628,
-    "watchServers": "غير متوفر"
-  },
-  {
     "url": "https://globalarticlewarehouse.com/",
     "status": "لم تبدأ بعد",
     "league": "دولي, كأس العالم - المجموعة ب",
@@ -24,8 +10,8 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/09/5032.png",
     "nameteam2": "كندا",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/2388.png",
-    "id": 158641,
-    "watchServers": "غير متوفر"
+    "id": 614529,
+    "watchServers": "https://pxdrop.lijit.com/a/t_.htm?ver=1.2063.1155&cid=c026&cls=sync#cls=sync&dmn=martinchavez98.org&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2063.1155&ell=d&cck=ljt_reader&pn=%2F&qs=na&rdn=martinchavez98.org&rpn=%2F&rqs=na&ipaddr=MjAuMTY5Ljc0Ljk2&cc=US&cont=NA&rc=AZ"
   },
   {
     "url": "https://globalarticlewarehouse.com/",
@@ -38,8 +24,8 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5048.png",
     "nameteam2": "قطر",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5079.png",
-    "id": 142445,
-    "watchServers": "غير متوفر"
+    "id": 190986,
+    "watchServers": "https://pxdrop.lijit.com/a/t_.htm?ver=1.2063.1155&cid=c026&cls=sync#cls=sync&dmn=martinchavez98.org&GDPR_v2=&us_privacy=&pubid=dt_scout&gpp=&gpp_sid=&tt=t.dhj&cid=c026&lbl=lijit&flbl=pxcel&ll=d&ver=1.2063.1155&ell=d&cck=ljt_reader&pn=%2F&qs=na&rdn=martinchavez98.org&rpn=%2F&rqs=na&ipaddr=MjAuMTY5Ljc0Ljk2&cc=US&cont=NA&rc=AZ"
   },
   {
     "url": "https://www.kooora-lives1.info/",
@@ -52,7 +38,21 @@
     "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5414.png",
     "nameteam2": "كرواتيا",
     "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5055.png",
-    "id": 229564,
+    "id": 292243,
+    "watchServers": "المباراة انتهت"
+  },
+  {
+    "url": "https://www.kooora-lives1.info/",
+    "status": "انتهت",
+    "league": "دولي, كأس العالم - المجموعة ك",
+    "time": "",
+    "channel": "beIN SPORTS MAX 2",
+    "score": "1 - 0",
+    "nameteam1": "كولومبيا",
+    "logoteam1": "https://www.kooora-lives1.info/wp-content/uploads/2025/06/5071.png",
+    "nameteam2": "الكونغو الديمقراطية",
+    "logoteam2": "https://www.kooora-lives1.info/wp-content/uploads/2025/08/14650.png",
+    "id": 199461,
     "watchServers": "المباراة انتهت"
   }
 ]
