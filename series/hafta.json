@@ -5,7 +5,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2016/04/Season_1_Poster-1-400x600.jpg?resize=400%2C600",
     "quality": "Bluray",
     "category": "Action",
-    "views": "1320437",
+    "views": "1320484",
     "imdb": "9.3"
   },
   {
@@ -14,7 +14,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2022/05/MV5BODZlYjQ4NzYtZTg1MC00NGY4LTg4NjQtNGE3ZjRkMjk3YjMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_-400x600.jpg?resize=400%2C600",
     "quality": "1080p WEB-DL",
     "category": "Drama",
-    "views": "185445",
+    "views": "185464",
     "imdb": ""
   },
   {
@@ -23,7 +23,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2016/08/6f1c7f40664543.5787e03bf042c-400x600.jpg?resize=400%2C600",
     "quality": "HDTV",
     "category": "Drama",
-    "views": "386053",
+    "views": "386077",
     "imdb": "8.8"
   },
   {
@@ -32,7 +32,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2016/08/0141842_big.jpg?resize=400%2C600",
     "quality": "HDTV",
     "category": "Crime",
-    "views": "380540",
+    "views": "380572",
     "imdb": "9.2"
   },
   {
@@ -41,7 +41,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2019/07/boys_xlg-400x600.jpg?resize=400%2C600",
     "quality": "720p WEB-DL",
     "category": "Action",
-    "views": "265221",
+    "views": "265248",
     "imdb": "8.7"
   },
   {
@@ -50,7 +50,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2024/06/7bd80a5cdf965bb0a088bada54063bbc-400x600.jpg?resize=400%2C600",
     "quality": "4K UltraHD",
     "category": "Action",
-    "views": "58959",
+    "views": "59002",
     "imdb": ""
   },
   {
@@ -59,17 +59,8 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2020/09/MV5BYzQzZmQ0MzAtYmI4NS00YWQ2LTgwOTEtYjA2YjI2ZmEwMTNjXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SY1000_CR006741000_AL_-400x600.jpg?resize=400%2C600",
     "quality": "1080p WEB-DL",
     "category": "Action",
-    "views": "178180",
+    "views": "178189",
     "imdb": "8.7"
-  },
-  {
-    "title": "مسلسل Stranger Things الموسم الثالث",
-    "link": "https://www.fasel-hd.cam/series/%d9%85%d8%b3%d9%84%d8%b3%d9%84-stranger-things-%d8%a7%d9%84%d9%85%d9%88%d8%b3%d9%85-%d8%a7%d9%84%d8%ab%d8%a7%d9%84%d8%ab",
-    "image": "https://static.faselhdcdn.com/wp-content/uploads/2019/07/MV5BZGExYjQzNTQtNGNhMi00YmY1LTlhY2MtMTRjODg3MjU4YTAyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_-400x600.jpg?resize=400%2C600",
-    "quality": "720p WEBRIP",
-    "category": "Drama",
-    "views": "318521",
-    "imdb": "8.8"
   },
   {
     "title": "مسلسل Game of Thrones الموسم الثاني",
@@ -77,8 +68,17 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2016/04/game-of-thrones-season-2-poster-400x600.jpg?resize=400%2C600",
     "quality": "Bluray",
     "category": "Action",
-    "views": "642540",
+    "views": "642568",
     "imdb": "9.3"
+  },
+  {
+    "title": "مسلسل Stranger Things الموسم الثالث",
+    "link": "https://www.fasel-hd.cam/series/%d9%85%d8%b3%d9%84%d8%b3%d9%84-stranger-things-%d8%a7%d9%84%d9%85%d9%88%d8%b3%d9%85-%d8%a7%d9%84%d8%ab%d8%a7%d9%84%d8%ab",
+    "image": "https://static.faselhdcdn.com/wp-content/uploads/2019/07/MV5BZGExYjQzNTQtNGNhMi00YmY1LTlhY2MtMTRjODg3MjU4YTAyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_-400x600.jpg?resize=400%2C600",
+    "quality": "720p WEBRIP",
+    "category": "Drama",
+    "views": "318535",
+    "imdb": "8.8"
   },
   {
     "title": "مسلسل Euphoria الموسم الأول",
@@ -86,7 +86,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2019/06/MV5BMDMzZDkyNzEtYTY5Ni00NzlhLWI4MzUtY2UzNjNmMjI1YzIzXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_-400x600.jpg?resize=400%2C600",
     "quality": "720p WEB-DL",
     "category": "N/A",
-    "views": "476877",
+    "views": "476894",
     "imdb": "8.3"
   }
 ]
