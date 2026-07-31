@@ -5,7 +5,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2022/07/Ee5EO_4f-400x600.jpg",
     "quality": "موسم واحد",
     "category": "Mystery",
-    "views": "64285",
+    "views": "64286",
     "imdb": ""
   },
   {
@@ -14,7 +14,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2022/06/dgJJz_4f-400x600.jpg",
     "quality": "موسم واحد",
     "category": "Drama",
-    "views": "43937",
+    "views": "43938",
     "imdb": ""
   },
   {
@@ -32,7 +32,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2021/08/MV5BZWVhYjcxYjAtYjkwMi00Mzk3LTg1MDctNTdmNWFiMTM5NWM2XkEyXkFqcGdeQXVyNDY5MjMyNTg@._V1_FMjpg_UX1000_-.jpg_UY1200--400x600.jpg",
     "quality": "موسم واحد",
     "category": "Fantasy",
-    "views": "6483",
+    "views": "6484",
     "imdb": ""
   },
   {
@@ -50,7 +50,16 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2019/12/MV5BNTNiMjhkNjEtOTIwYy00MmM1LTk1OGEtMDBlNjNhMjI5ZjY3XkEyXkFqcGdeQXVyMzE4MDkyNTA@._V1_SY1000_CR006671000_AL_-400x600.jpg",
     "quality": "موسم واحد",
     "category": "Drama",
-    "views": "51851",
+    "views": "51852",
+    "imdb": ""
+  },
+  {
+    "title": "مسلسل Mouse",
+    "link": "https://www.fasel-hd.cam/asian_seasons/%d9%85%d8%b3%d9%84%d8%b3%d9%84-mouse",
+    "image": "https://static.faselhdcdn.com/wp-content/uploads/2021/03/XNeKO_4f-400x600.jpg",
+    "quality": "موسمان",
+    "category": "Action",
+    "views": "144568",
     "imdb": ""
   },
   {
@@ -63,21 +72,12 @@
     "imdb": ""
   },
   {
-    "title": "مسلسل Mouse",
-    "link": "https://www.fasel-hd.cam/asian_seasons/%d9%85%d8%b3%d9%84%d8%b3%d9%84-mouse",
-    "image": "https://static.faselhdcdn.com/wp-content/uploads/2021/03/XNeKO_4f-400x600.jpg",
-    "quality": "موسمان",
-    "category": "Action",
-    "views": "144552",
-    "imdb": ""
-  },
-  {
     "title": "مسلسل Voice",
     "link": "https://www.fasel-hd.cam/asian_seasons/%d9%85%d8%b3%d9%84%d8%b3%d9%84-voice",
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2018/11/MV5BOWJkMjMzYjUtODMwYy00NGZkLTg5YWYtZDM5NTQxODRlM2JiL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMzE4MDkyNTA@._V1_SY1000_CR006611000_AL_-400x600.jpg",
     "quality": "4 مواسم",
     "category": "Action",
-    "views": "79880",
+    "views": "79885",
     "imdb": ""
   },
   {
@@ -86,7 +86,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2022/07/06ykK_4f-400x600.jpg",
     "quality": "موسم واحد",
     "category": "Comedy",
-    "views": "11239",
+    "views": "11242",
     "imdb": ""
   }
 ]
