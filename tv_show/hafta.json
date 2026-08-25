@@ -5,7 +5,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2021/02/image-400x600.jpg?resize=400%2C600",
     "quality": "26 حلقة",
     "category": "كوميدي",
-    "views": "167482",
+    "views": "167491",
     "imdb": ""
   },
   {
@@ -14,7 +14,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2017/02/MV5BNjcyODY5Nzg4Ml5BMl5BanBnXkFtZTgwNDEwNTQ0MTI@._V1_SY1000_CR006741000_AL_-400x600.jpg?resize=400%2C600",
     "quality": "17 حلقة",
     "category": "توك شو",
-    "views": "121969",
+    "views": "121979",
     "imdb": "8.6"
   },
   {
@@ -23,7 +23,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2021/06/AGT_S16-KeyArt-Logo-Vertical-852x1136-1-400x600.jpg?resize=400%2C600",
     "quality": "23 حلقة",
     "category": "برنامج مسابقات غنائي",
-    "views": "17932",
+    "views": "17937",
     "imdb": ""
   },
   {
@@ -32,7 +32,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2019/03/MV5BMTg4ODkwODAzMV5BMl5BanBnXkFtZTgwNDMwNDM5NDM@._V1_SY1000_CR007011000_AL_-400x600.jpg?resize=400%2C600",
     "quality": "26 حلقة",
     "category": "كوميدي",
-    "views": "141646",
+    "views": "141653",
     "imdb": "8.6"
   },
   {
@@ -41,7 +41,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2022/06/MV5BNGM3YmE2OWQtNzk4MS00ZTc0LTlkMDctNjI3ZWZlODhlYzFmXkEyXkFqcGdeQXVyMTUwMzM5ODkz._V1_-400x600.jpg?resize=400%2C600",
     "quality": "23 حلقة",
     "category": "برنامج مسابقات غنائي",
-    "views": "15684",
+    "views": "15687",
     "imdb": ""
   },
   {
@@ -50,7 +50,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2017/04/1148157288-2100976_big-400x600.jpg?resize=400%2C600",
     "quality": "28 حلقة",
     "category": "تلفزيون الواقع",
-    "views": "68516",
+    "views": "68523",
     "imdb": "8.6"
   },
   {
@@ -59,17 +59,8 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2017/06/2aec21f683a3eebd289763d1dbf56881-impractical-jokers-season-giveaways-400x600.jpg?resize=400%2C600",
     "quality": "31 حلقة",
     "category": "تلفزيون الواقع",
-    "views": "66842",
+    "views": "66849",
     "imdb": "8.6"
-  },
-  {
-    "title": "برنامج America’s Got Talent الموسم الثامن عشر",
-    "link": "https://www.fasel-hd.cam/tvshows/%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d8%ac-americas-got-talent-%d8%a7%d9%84%d9%85%d9%88%d8%b3%d9%85-%d8%a7%d9%84%d8%ab%d8%a7%d9%85%d9%86-%d8%b9%d8%b4%d8%b1",
-    "image": "https://static.faselhdcdn.com/wp-content/uploads/2023/06/fdd760c9423fb36d68b2f23d91fb9930.jpg?resize=400%2C600",
-    "quality": "23 حلقة",
-    "category": "برنامج مسابقات غنائي",
-    "views": "12692",
-    "imdb": ""
   },
   {
     "title": "برنامج The Grand Tour – الموسم الاول",
@@ -77,8 +68,17 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2017/12/the-grand-tour-first-season.59873-400x600.jpg?resize=400%2C600",
     "quality": "12 حلقة",
     "category": "تلفزيون الواقع",
-    "views": "43877",
+    "views": "43881",
     "imdb": "8.7"
+  },
+  {
+    "title": "برنامج America’s Got Talent الموسم الثامن عشر",
+    "link": "https://www.fasel-hd.cam/tvshows/%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d8%ac-americas-got-talent-%d8%a7%d9%84%d9%85%d9%88%d8%b3%d9%85-%d8%a7%d9%84%d8%ab%d8%a7%d9%85%d9%86-%d8%b9%d8%b4%d8%b1",
+    "image": "https://static.faselhdcdn.com/wp-content/uploads/2023/06/fdd760c9423fb36d68b2f23d91fb9930.jpg?resize=400%2C600",
+    "quality": "23 حلقة",
+    "category": "برنامج مسابقات غنائي",
+    "views": "12695",
+    "imdb": ""
   },
   {
     "title": "برنامج The Grand Tour الموسم الخامس",
@@ -86,7 +86,7 @@
     "image": "https://static.faselhdcdn.com/wp-content/uploads/2022/09/96d8864538a88a1e89a7e0daa3b26280-400x600.jpg?resize=400%2C600",
     "quality": "",
     "category": "توك شو",
-    "views": "21092",
+    "views": "21095",
     "imdb": ""
   }
 ]
